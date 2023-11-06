@@ -4,4 +4,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import solutions.mundovirtual.usuario.domain.Usuario;
 
 public interface UsuarioRepository extends JpaRepository<Usuario, Integer> {
+	Usuario findByNombre(String nombre);
 }
